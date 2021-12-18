@@ -35,7 +35,6 @@ header h3 {
     color: rgb(24, 125, 134);
     text-decoration: underline grey;
     border-bottom: 4px solid rgb(24, 125, 134);
-    
 }
 
 main {
@@ -96,4 +95,10 @@ main {
     border-left: 2px solid red;
     height: 100px;
     width: 1px;
+}
+
+section li {
+    display: inline-block;
+    margin-left: 30px;
+    text-align: center;
 }
