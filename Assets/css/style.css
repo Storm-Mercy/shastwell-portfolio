@@ -24,7 +24,7 @@ nav a {
 }
 
 nav a:hover {
-    color:royalblue;
+    color:rgb(255, 230, 0);
 }
 
 header ul {
@@ -95,14 +95,27 @@ p {
     margin-inline-end: 0px;
 }
 
+.buttons {
+    /* border-width: 10px; */
+    border: solid 1px black;
+    background-color: salmon;
+    border-radius: 10%;
+    padding: 20px;
+}
+
+.buttons:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
 section ul {
-    margin: 350px auto 75px auto;
+    margin: 350px auto 10px auto;
     text-align: center;
 }
 
 section li {
     display: inline-block;
-    margin-left: 8px;
+    margin-left: 10px;
     text-align: center;
 }
 
