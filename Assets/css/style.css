@@ -41,8 +41,8 @@ main {
 
 main img {
     margin: 3% 0 3% 0;
-    height: 20em;
-    width: 20em;
+    /* height: 20em;
+    width: 20em; */
     border-radius: 100%;
 }
 /* change px to % of width and height later!!!! */
@@ -54,37 +54,57 @@ main img {
     width: 140px;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(24, 125, 134);
+    background-color: white;
 }
     
 #about_me_text {
-    margin: 10px 10px 0 0 ;
-    text-align: right;
+    margin: 25px 10px 15px 0 ;
+    text-align: left;
 }
 
 #about_me_hr {
     position: relative;
     float: right;
-    margin-top: -35px;
+    margin-top: -65px;
     border: none;
     border-left: 2px solid red;
-    height: 100px;
+    height: 75px;
     width: 1px;
 }
 
-.my_work_and_contact_text {
-    margin: 75px 10px 0 0;
-    text-align: right;
+.my_work_text {
+    margin: 100px 10px 0 0;
+    float: left;
 }
 
-.my_work_and_contact_hr {
+.my_work_hr {
     position: relative;
     float: right;
     margin-top: -65px;
     border: none;
     border-left: 2px solid red;
-    height: 100px;
+    height: 75px;
     width: 1px;
+}
+
+.contact_me_text {
+    margin: 550px 10px -40px 0;
+    float: left;
+}
+
+.contact_me_hr {
+    position: relative;
+    float: right;
+    margin-top: -10px;
+    border: none;
+    border-left: 2px solid red;
+    height: 50px;
+    width: 1px;
+}
+
+aside {
+    padding-bottom: auto;
+    margin-bottom: 0;
 }
 
 p {
@@ -93,6 +113,31 @@ p {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    margin-top: 50px;
+}
+
+.s2 img {
+    margin-top: 75px;
+    height: 125%;
+    width: 500px;
+    display: inline-block;
+}
+
+.s2 img:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    border: solid 1px black;
+}
+
+.coming_soon {
+    margin-left: 15px;
+    display: inline;
+    /* border: solid 5px black; */
+}
+
+.coming_soon img {
+    height: 100%;
+    width: 400px;
 }
 
 .buttons {
@@ -121,6 +166,10 @@ section li {
 
 footer{
     text-align:center;
+    background-color: darkgoldenrod;
+    margin: 15px 0 15px 0;
+    padding: 15px 0 15px 0;
+    text-decoration: underline solid 3px purple;
 }
 
 @media screen and (max-width: 768px) {
