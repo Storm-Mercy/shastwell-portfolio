@@ -40,9 +40,7 @@ main {
 }
 
 main img {
-    margin: 3% 0 3% 0;
-    /* height: 20em;
-    width: 20em; */
+    margin: 3% 0 3% 175px;
     border-radius: 100%;
 }
 /* change px to % of width and height later!!!! */
@@ -83,12 +81,12 @@ main img {
     margin-top: -65px;
     border: none;
     border-left: 2px solid red;
-    height: 75px;
+    height: 150px;
     width: 1px;
 }
 
 .contact_me_text {
-    margin: 550px 10px -40px 0;
+    margin: 475px 10px -40px 0;
     float: left;
 }
 
@@ -104,7 +102,7 @@ main img {
 
 aside {
     padding-bottom: auto;
-    margin-bottom: 0;
+    margin-bottom: 50px;
 }
 
 p {
@@ -114,6 +112,7 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     margin-top: 50px;
+    text-align: center;
 }
 
 .s2 img {
@@ -121,6 +120,10 @@ p {
     height: 125%;
     width: 500px;
     display: inline-block;
+    text-align: center;
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
 }
 
 .s2 img:hover {
