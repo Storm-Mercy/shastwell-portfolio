@@ -1,3 +1,7 @@
+:root {
+    min-width: 1080px;
+}
+
 * {
     box-sizing:border-box;
     padding: 0px;
@@ -63,40 +67,40 @@ main img {
 #about_me_hr {
     position: relative;
     float: right;
-    margin-top: -65px;
+    margin-top: -40px;
     border: none;
     border-left: 2px solid red;
-    height: 75px;
+    height: 50px;
     width: 1px;
 }
 
-.my_work_text {
+#my_work_text {
     margin: 100px 10px 0 0;
     float: left;
 }
 
-.my_work_hr {
+#my_work_hr {
     position: relative;
     float: right;
-    margin-top: -65px;
+    margin-top: -55px;
     border: none;
     border-left: 2px solid red;
     height: 150px;
     width: 1px;
 }
 
-.contact_me_text {
-    margin: 475px 10px -40px 0;
+#contact_me_text {
+    margin: 465px 10px -40px 0;
     float: left;
 }
 
-.contact_me_hr {
+#contact_me_hr {
     position: relative;
     float: right;
-    margin-top: -10px;
+    margin-top: -8px;
     border: none;
     border-left: 2px solid red;
-    height: 50px;
+    height: 40px;
     width: 1px;
 }
 
@@ -111,7 +115,7 @@ p {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    margin-top: 50px;
+    margin-top: 45px;
     text-align: center;
 }
 
@@ -126,6 +130,13 @@ p {
     text-align: center;
 }
 
+/* #my_work.s2{
+    max-width:50%;
+    height:auto;
+    max-width:50%;
+    height:auto;
+} */
+
 .s2 img:hover {
     transform: scale(1.1);
     transition: .5s;
@@ -133,7 +144,7 @@ p {
 }
 
 .coming_soon {
-    margin-left: 15px;
+    /* margin-left: 15px; */
     display: inline;
     /* border: solid 5px black; */
 }
@@ -141,6 +152,7 @@ p {
 .coming_soon img {
     height: 100%;
     width: 400px;
+    margin-left: 15px;
 }
 
 .buttons {
@@ -175,11 +187,50 @@ footer{
     text-decoration: underline solid 3px purple;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     header {
       flex-direction: column;
     }
     main {
       max-width: 1200px;
     }
-  }
+    aside {
+        margin-bottom: 500px;
+    }
+} */
+@media screen and (max-width: 768px) {
+    .s1 {
+        display:flex;
+        flex-wrap: wrap;
+    }
+    
+    /* future reference, change 150px to something higher for
+    taller hr line */
+    #about_me_hr {
+        padding: 0 0 150px 0;
+    }
+
+    #work_text {
+        margin-top: 225px;
+    }
+
+    #my_work_hr {
+        /* margin-top: 225px; */
+        padding: 0 0 500px 0;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .s2 img{
+        max-width: 50%;
+        height: auto;
+    }
+
+    section img {
+        max-width: 25%;
+        height: auto;
+        margin: 0px;
+    }
+}
