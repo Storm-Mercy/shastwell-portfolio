@@ -44,8 +44,9 @@ main {
 }
 
 main img {
-    margin: 3% 0 3% 175px;
+    margin: 1.5% 0 1.5% 0px;
     border-radius: 100%;
+    text-align: center;
 }
 /* change px to % of width and height later!!!! */
 .box { 
@@ -124,10 +125,10 @@ p {
     height: 125%;
     width: 500px;
     display: inline-block;
-    text-align: center;
+    /* text-align: center; */
     display: inline-block;
     margin-left: 10px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 /* #my_work.s2{
@@ -140,11 +141,12 @@ p {
 .s2 img:hover {
     transform: scale(1.1);
     transition: .5s;
-    border: solid 1px black;
+    /* border: solid 1px black; */
 }
 
 .coming_soon {
     /* margin-left: 15px; */
+    margin-top: 0;
     display: inline;
     /* border: solid 5px black; */
 }
@@ -182,7 +184,7 @@ section li {
 footer{
     text-align:center;
     background-color: darkgoldenrod;
-    margin: 15px 0 15px 0;
+    margin: 15px 0 0px 0;
     padding: 15px 0 15px 0;
     text-decoration: underline solid 3px purple;
 }
@@ -198,7 +200,7 @@ footer{
         margin-bottom: 500px;
     }
 } */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
     .s1 {
         display:flex;
         flex-wrap: wrap;
@@ -224,6 +226,7 @@ footer{
     }
 
     .s2 img{
+        margin: 175px 0 20px 0;
         max-width: 50%;
         height: auto;
     }
@@ -233,4 +236,30 @@ footer{
         height: auto;
         margin: 0px;
     }
+
+    aside {
+        margin-bottom: 0;
+    }
+    
+    main img {
+        margin: 0;
+        border-radius: 100%;
+    }
+
+    .coming_soon img {
+        margin-top: 0;
+    }
+
+    #contact_me_text {
+        margin-top: 555px;
+    }
+
+    section ul {
+        /* margin: 350px auto 10px auto; */
+        text-align: center;
+    }
+
+    /* section {
+        margin-left: 25px;
+    } */
 }
