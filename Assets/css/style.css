@@ -1,28 +1,33 @@
+/* root selector */
 :root {
     min-width: 1080px;
 }
 
+/* universal selector */
 * {
     box-sizing:border-box;
     padding: 0px;
     margin: 0px;
 }
 
+/* gives the header style */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    background-color: black;
+    background-color: salmon;
     color: rgb(24, 125, 134)
 }
 
+/* changes size of my name */
 header h1 {
     font-size: 200%;
 }
 
+/* gives style to the nav bar links */
 nav a {
-    color:rgb(24, 125, 134);
+    color: rgb(107, 243, 255);
     font-weight: bold;
     text-decoration: none;
 }
@@ -38,18 +43,20 @@ header ul {
     list-style: none;
 }
 
+/* background behind my picture */
 main {
     text-align: center;
     background-color: rgba(0, 86, 112, 0.534);
 }
-
+/* style for picture of myself */
 main img {
     margin: 1.5% 0 1.5% 0px;
     border-radius: 100%;
     text-align: center;
 }
-/* change px to % of width and height later!!!! */
-.box { 
+
+/* style for aside */
+aside { 
     margin-right: 20px;
     padding-left: 20px;
     clear: both;
@@ -59,12 +66,14 @@ main img {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: white;
 }
-    
+
+/* changes style to the text that says about me */
 #about_me_text {
     margin: 25px 10px 15px 0 ;
     text-align: left;
 }
 
+/* changes the hr for about me text */
 #about_me_hr {
     position: relative;
     float: right;
@@ -75,11 +84,13 @@ main img {
     width: 1px;
 }
 
+/* changes the style for my work text */
 #my_work_text {
     margin: 100px 10px 0 0;
     float: left;
 }
 
+/* affects the my work hr potenially altering other hrs */
 #my_work_hr {
     position: relative;
     float: right;
@@ -90,11 +101,13 @@ main img {
     width: 1px;
 }
 
+/* affects the contact me text */
 #contact_me_text {
     margin: 465px 10px -40px 0;
     float: left;
 }
 
+/* affects the contact me hr potentially changing other hrs */
 #contact_me_hr {
     position: relative;
     float: right;
@@ -105,11 +118,7 @@ main img {
     width: 1px;
 }
 
-aside {
-    padding-bottom: auto;
-    margin-bottom: 50px;
-}
-
+/* changes style of the paragraph */
 p {
     display: block;
     margin-block-start: 1em;
@@ -117,70 +126,73 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     margin-top: 45px;
-    text-align: center;
 }
 
+/* changes the style to my s2 images */
 .s2 img {
     margin-top: 75px;
     height: 125%;
     width: 500px;
     display: inline-block;
-    /* text-align: center; */
     display: inline-block;
     margin-left: 10px;
-    /* text-align: center; */
 }
 
-/* #my_work.s2{
-    max-width:50%;
-    height:auto;
-    max-width:50%;
-    height:auto;
-} */
-
+/* changes the hover aspect of the images */
 .s2 img:hover {
     transform: scale(1.1);
     transition: .5s;
-    /* border: solid 1px black; */
+    border: solid 1px black;
+    cursor: pointer;
 }
 
+/* coming soon  images style */
 .coming_soon {
-    /* margin-left: 15px; */
     margin-top: 0;
     display: inline;
-    /* border: solid 5px black; */
 }
 
 .coming_soon img {
     height: 100%;
     width: 400px;
     margin-left: 15px;
+    margin-top: 0;
+    display: inline; 
 }
 
+/* gives class of buttons so I could create buttons */
 .buttons {
-    /* border-width: 10px; */
     border: solid 1px black;
     background-color: salmon;
     border-radius: 10%;
     padding: 20px;
 }
 
+/* gives buttons hover aspect */
 .buttons:hover {
     transform: scale(1.1);
     transition: .5s;
 }
 
+/* gives center for images and text */
+section {
+    text-align: center;
+}
+
+/* styles the section ul */
 section ul {
     margin: 350px auto 10px auto;
     text-align: center;
 }
 
+/* styles my section li */
 section li {
     display: inline-block;
     margin-left: 10px;
     text-align: center;
 }
 
+/* styles my footer */
 footer{
     text-align:center;
     background-color: darkgoldenrod;
@@ -189,17 +201,7 @@ footer{
     text-decoration: underline solid 3px purple;
 }
 
-/* @media screen and (max-width: 768px) {
-    header {
-      flex-direction: column;
-    }
-    main {
-      max-width: 1200px;
-    }
-    aside {
-        margin-bottom: 500px;
-    }
-} */
+/* gives the page responsive web design */
 @media screen and (max-width: 1080px) {
     .s1 {
         display:flex;
@@ -217,7 +219,6 @@ footer{
     }
 
     #my_work_hr {
-        /* margin-top: 225px; */
         padding: 0 0 500px 0;
     }
 
@@ -255,11 +256,6 @@ footer{
     }
 
     section ul {
-        /* margin: 350px auto 10px auto; */
         text-align: center;
     }
-
-    /* section {
-        margin-left: 25px;
-    } */
 }
